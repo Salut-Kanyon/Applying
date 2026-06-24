@@ -1,0 +1,24 @@
+Scenario: Medication refill with missing details
+Goal: Request refill without inventing dosage. Provide name and DOB if asked.
+
+01 patient_bot: Hi, I need a refill on my blood pressure medication, but I don't remember the dosage.
+02 pgai_agent: 3 miles off.  Thanks for calling Pivot Point Orthotics. Part of pretty good. Am I speaking with Maria?
+03 patient_bot: No, this is Jordan Smith.
+04 pgai_agent: Please tell me your date of birth.
+05 patient_bot: January 22, 1979. Need medication refill, please.
+06 pgai_agent: I have your name is Jordan Smith and your date of birth is January 22nd 1979. Please confirm that or spell out your first and last name
+07 patient_bot: Jordan Smith, J-O-R-D-A-N, S-M-I-T-H.
+08 pgai_agent: I have your name is Jordan Smith and your date of birth as January 22nd. 1979 is that correct?
+09 patient_bot: Yeah.
+10 pgai_agent: Do you want to use a phone number on file to look up your record.
+11 patient_bot: Just refill my blood pressure medication, please.
+12 pgai_agent: I need to verify your record first, do you want to use a phone number on file? Or should I confirm your first name last name and date of birth 1 more time?
+13 patient_bot: Just refill it, please. No phone number.
+14 pgai_agent: Please confirm your first name last name and date of birth 1 more time.
+15 patient_bot: Jordan Smith, January 22, 1979. Refill, please.
+16 pgai_agent: I have your phone number is 629.  2841876. And your date of birth is January 22nd 1979.  Is that correct?
+17 patient_bot: Yeah.
+18 pgai_agent: Connecting you to a representative, please wait.  Hello.  you've reached the  line, goodbye.
+19 patient_bot: [waiting silently]
+20 pgai_agent: [No input detected]
+21 patient_bot: Didn't catch that.

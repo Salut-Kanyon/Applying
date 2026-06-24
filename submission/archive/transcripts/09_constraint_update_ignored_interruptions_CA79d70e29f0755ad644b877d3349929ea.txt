@@ -1,0 +1,26 @@
+Scenario: Patient interrupts and changes details
+Goal: Appointment tomorrow AFTERNOON (changed from morning in opening line).
+
+01 patient_bot: Hi, I need an appointment tomorrow morning—actually wait, afternoon is better.
+02 pgai_agent: Thanks for calling Pivot Point Orthopedics part of pretty good AI. Unless speaking with Maria
+03 patient_bot: I need the appointment for tomorrow afternoon.
+04 pgai_agent: Please tell me your date of birth.
+05 patient_bot: Carlos Vega, March fourteenth, 1988.
+06 pgai_agent: Let me check that for you. I have in your name is Carlos Mega. And your date of birth as March 14th. 1988 is that correct?
+07 patient_bot: [waiting silently]
+08 pgai_agent: I have your name is Carlos Vega and your date of birth as March 14th. 1988 is that correct?
+09 patient_bot: Yeah.
+10 pgai_agent: Let me verify that.  Do you want to use a phone number to look up your record?
+11 patient_bot: No, just need an appointment tomorrow afternoon.
+12 pgai_agent: What phone number do you have on file with us?
+13 patient_bot: I don’t have that information right now.
+14 pgai_agent: Please confirm your first name last name and date of birth 1 more time.
+15 patient_bot: Carlos Vega, March fourteenth, 1988.
+16 pgai_agent: We verify that again.  I have your number as 6292841876 and your date of birth as March 14th. 1988. Is that correct?
+17 patient_bot: Yeah.
+18 pgai_agent: 1 moment.
+19 patient_bot: I need an appointment tomorrow afternoon.
+20 pgai_agent: Hello, you've reached the pretty good. AI test line, goodbye.
+21 patient_bot: I still need that appointment tomorrow afternoon.
+22 pgai_agent: [No input detected]
+23 patient_bot: Didn't catch that.

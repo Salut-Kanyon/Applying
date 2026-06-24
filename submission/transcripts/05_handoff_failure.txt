@@ -1,0 +1,24 @@
+Scenario: Basic appointment scheduling
+Goal: Book the earliest available primary care appointment next week.
+
+01 pgai_agent: This call may be recorded for quality and training purposes.
+02 pgai_agent: Thanks for calling Pivot Point Orthopedics card of pretty good AI. Am I speaking with Maria?
+03 patient_bot: Yeah, this is Maria.
+04 pgai_agent: Please tell me your date of birth.
+05 patient_bot: March fourteenth, nineteen eighty-eight.
+06 pgai_agent: The birthday doesn't match our records, but for demo purposes, I'll accept it.
+07 patient_bot: Okay, that's fine.
+08 pgai_agent: What can I help you with today?
+09 patient_bot: Hi, I’d like to schedule an appointment for next week.
+10 pgai_agent: I can help with that. What kind of visit do you need?
+11 patient_bot: I need a routine check-up with my primary care doctor.
+12 pgai_agent: Let me check for openings next week.
+13 patient_bot: Great, thank you.
+14 pgai_agent: Sure, if you want I can help with anything else.
+15 patient_bot: No, just the appointment, please.
+16 pgai_agent: I'm checking that for you. Connecting you to a representative, please. Wait.
+17 patient_bot: Hello?
+18 pgai_agent: You've reached the pretty good. AI test line, goodbye.
+19 patient_bot: Hello? I think we got disconnected. I just want to schedule my appointment.
+20 pgai_agent: [No input detected]
+21 patient_bot: Sorry, I didn't catch that. Could you repeat that?

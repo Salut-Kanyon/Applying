@@ -1,0 +1,5 @@
+# Architecture
+
+This project uses a simple webhook-driven voice architecture. A Python script starts outbound calls through Twilio to the Pretty Good AI assessment number. For each call, Twilio requests TwiML from a FastAPI server. The server speaks as a simulated patient, listens to the healthcare agent using Twilio speech recognition, stores each turn, and uses an LLM to generate the next patient response based on the assigned scenario.
+
+I chose this design because it is fast to ship, easy to debug, and good enough to evaluate the most important requirement: lucid voice conversations. Instead of over-engineering a real-time media stream, the bot uses short turn-based responses with realistic patient personas. This keeps latency and implementation risk lower while still allowing diverse test cases such as scheduling, refills, office-hours traps, medical-safety boundaries, interruptions, and conflicting patient information. After calls are complete, transcripts can be exported and analyzed by an LLM into bug reports with severity, evidence, and expected behavior.

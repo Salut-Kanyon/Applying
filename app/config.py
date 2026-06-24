@@ -1,0 +1,18 @@
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
+
+TWILIO_ACCOUNT_SID = os.getenv("TWILIO_ACCOUNT_SID", "")
+TWILIO_AUTH_TOKEN = os.getenv("TWILIO_AUTH_TOKEN", "")
+TWILIO_PHONE_NUMBER = os.getenv("TWILIO_PHONE_NUMBER", "")
+TARGET_PHONE_NUMBER = os.getenv("TARGET_PHONE_NUMBER", "+18054398008")
+PUBLIC_BASE_URL = os.getenv("PUBLIC_BASE_URL", "")
+OPENAI_API_KEY = os.getenv("OPENAI_API_KEY", "")
+OPENAI_MODEL = os.getenv("OPENAI_MODEL", "gpt-4o-mini")
+OPENAI_LIVE_MAX_TOKENS = int(os.getenv("OPENAI_LIVE_MAX_TOKENS", "40"))
+OPENAI_LIVE_TIMEOUT_SEC = float(os.getenv("OPENAI_LIVE_TIMEOUT_SEC", "1.2"))
+LIVE_CONTEXT_TURNS = int(os.getenv("LIVE_CONTEXT_TURNS", "6"))
+MAX_TURNS_PER_CALL = int(os.getenv("MAX_TURNS_PER_CALL", "10"))
+
+ALLOWED_TARGET = "+18054398008"

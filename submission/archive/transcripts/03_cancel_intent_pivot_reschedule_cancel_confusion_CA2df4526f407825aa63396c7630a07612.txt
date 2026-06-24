@@ -1,0 +1,22 @@
+Scenario: Reschedule then cancel confusion
+Goal: Start with reschedule, then change mind to cancel. Final intent must be cancel.
+
+01 patient_bot: Hi, I need to reschedule my appointment, actually maybe cancel it.
+02 pgai_agent: For.  Thanks for calling Pivot Point Orthopedics. Part of pretty good AI. Am I speaking with Maria?
+03 patient_bot: No, this is Ana Rodriguez.
+04 pgai_agent: Please tell me your date of birth.
+05 patient_bot: November second, nineteen ninety.
+06 pgai_agent: I have your name as Anna Rodriguez and your date of birth as November 2nd. 1990. Is that correct?
+07 patient_bot: Yeah.
+08 pgai_agent: Please tell me your full name and date of birth again.
+09 patient_bot: Just cancel my appointment, please.
+10 pgai_agent: Something's not right.
+11 patient_bot: I said cancel, not reschedule.
+12 pgai_agent: Something's not right.
+13 patient_bot: I don’t want to keep the appointment.
+14 pgai_agent: Let me handle the cancellation.
+15 patient_bot: I’m sure, just cancel it.
+16 pgai_agent: Connecting you to a representative, please wait.  Hello.  A pretty good.  Line.
+17 patient_bot: [waiting silently]
+18 pgai_agent: [No input detected]
+19 patient_bot: Didn't catch that.

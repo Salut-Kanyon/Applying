@@ -1,0 +1,14 @@
+Scenario: Two intents: insurance and location
+Goal: Ask if they accept Blue Cross AND where the office is. Both must be answered.
+
+01 patient_bot: Hi, do you take Blue Cross insurance, and where exactly is your office?
+02 pgai_agent: Thanks for calling Pivot Point Orthopedics. Part of pretty good AI. Am I speaking with Maria?
+03 patient_bot: No, I'm Priya Patel, not Maria.
+04 pgai_agent: Please give me your date of birth.
+05 patient_bot: March fourth, 1990. Do you accept Blue Cross?
+06 pgai_agent: I have your name is Priya Patel and your date of birth is March 4th 1990. Is that correct?  I can't proceed further right now but I can make sure our Clinic support team follows up with you. I'll connect you to our Clinic support team. Please stay on the line.
+07 patient_bot: [waiting silently]
+08 pgai_agent: Connecting you to a representative, please wait.  Hello.  It's a pretty good. AI test line, goodbye.
+09 patient_bot: [waiting silently]
+10 pgai_agent: [No input detected]
+11 patient_bot: Didn't catch that.

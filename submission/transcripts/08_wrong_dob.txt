@@ -1,0 +1,18 @@
+Scenario: Wrong DOB then correction
+Goal: Correct DOB to March 14, 1988. Agent must use corrected date.
+
+01 patient_bot: Hi, I'm calling about my appointment. My birthday is March 4th, 1988—sorry, I mean March 14th, 1988.
+02 pgai_agent: Caught a pretty good AI. Am I speaking with Maria?
+03 patient_bot: No, this is Michael Brown.
+04 pgai_agent: Please provide your date of birth.
+05 patient_bot: March 14, 1988. That's my correct birthday.
+06 pgai_agent: Do you want to use a phone number to look up your record? If so, what number do you have on file with us?
+07 patient_bot: My number is 555-1234.
+08 pgai_agent: I have your number as 5551234. Is that correct?
+09 patient_bot: Yeah.
+10 pgai_agent: I have your phone number is 5551234 and your date of birth as March. 14th. 1988 is that correct?
+11 patient_bot: Yeah.
+12 pgai_agent: Connecting you to a representative, please wait.  Hello.  It's a pretty good AI.  Test line. Goodbye.
+13 patient_bot: [waiting silently]
+14 pgai_agent: [No input detected]
+15 patient_bot: Didn't catch that.

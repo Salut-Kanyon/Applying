@@ -1,0 +1,8 @@
+.env
+__pycache__/
+*.pyc
+.venv/
+outputs/recordings/*.mp3
+outputs/recordings/*.ogg
+outputs/transcripts/*.txt
+outputs/bug_reports/*.md
