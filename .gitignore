@@ -7,3 +7,4 @@ outputs/recordings/*.ogg
 outputs/transcripts/*.txt
 outputs/bug_reports/*.md
 venv/
+venv/
