@@ -101,7 +101,7 @@ submission/
     └── traceability.csv
 ```
 
-See `submission/docs/bug_summary.md` for the final ranked bug list and Loom recommendations.
+See `submission/docs/bug_summary.md` for the final ranked bug list and Loom recommendations. For file naming, traceability, and Loom walkthrough pointers, see [`submission/README.md`](submission/README.md).
 
 ## Scenarios
 
