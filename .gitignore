@@ -1,11 +1,11 @@
 .env
+.DS_Store
 __pycache__/
 *.pyc
 .venv/
+LOOMWALKTHROUGH.mp4
 outputs/recordings/*.mp3
 outputs/recordings/*.ogg
 outputs/transcripts/*.txt
 outputs/bug_reports/*.md
-venv/
-venv/
 venv/
